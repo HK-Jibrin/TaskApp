@@ -1,0 +1,236 @@
+﻿@model IEnumerable<RegistCom>
+
+@{
+    ViewBag.Title = "Home";
+}
+
+
+
+    <div class="row">
+        <!-- order-card start -->
+        <div class="col-md-6 col-xl-3">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Task Received</h6>
+                    <h2 class="text-right"><i class="ti-shopping-cart f-left"></i><span>45</span></h2>
+                    <p class="m-b-0">Completed Task<span class="f-right">35</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+            <div class="card bg-c-green order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Total Task</h6>
+                    <h2 class="text-right"><i class="ti-tag f-left"></i><span>500</span></h2>
+                    <p class="m-b-0">This Month<span class="f-right">20</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+            <div class="card bg-c-yellow order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Department</h6>
+                    <h2 class="text-right"><i class="ti-reload f-left"></i><span>7</span></h2>
+                    <p class="m-b-0">Daily Task<span class="f-right">1</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+            <div class="card bg-c-pink order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Leave Task</h6>
+                    <h2 class="text-right"><i class="ti-wallet f-left"></i><span>2</span></h2>
+                    <p class="m-b-0">Mainly for IT<span class="f-right"></span></p>
+                </div>
+            </div>
+        </div>
+        <!-- order-card end -->
+        <!-- users visite and profile start -->
+        <div class="col-md-4">
+            <div class="card user-card">
+                <div class="card-header">
+                    <h5>Profile</h5>
+                </div>
+                <div class="card-block">
+                    <div class="usre-image">
+                        <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                    </div>
+                    <h6 class="f-w-600 m-t-25 m-b-10">Alessa Robert</h6>
+                    <p class="text-muted">Active | Male | Born 23.05.1992</p>
+                    <hr />
+                    <p class="text-muted m-t-15">Activity Level: 87%</p>
+                    <ul class="list-unstyled activity-leval">
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="bg-c-blue counter-block m-t-10 p-20">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="ti-comments"></i>
+                                <p>1256</p>
+                            </div>
+                            <div class="col-4">
+                                <i class="ti-user"></i>
+                                <p>8562</p>
+                            </div>
+                            <div class="col-4">
+                                <i class="ti-bag"></i>
+                                <p>189</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="m-t-15 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <hr />
+                    <div class="row justify-content-center user-social-link">
+                        <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
+                        <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
+                        <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Activity Feed</h5>
+                    <div class="card-header-right">
+                        <ul class="list-unstyled card-option">
+                            <li><i class="fa fa-chevron-left"></i></li>
+                            <li><i class="fa fa-window-maximize full-card"></i></li>
+                            <li><i class="fa fa-minus minimize-card"></i></li>
+                            <li><i class="fa fa-refresh reload-card"></i></li>
+                            <li><i class="fa fa-times close-card"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-block">
+                    <ul class="feed-blog">
+                        <li class="active-feed">
+                            <div class="feed-user-img">
+                                <img src="assets/images/avatar-3.jpg" class="img-radius " alt="User-Profile-Image">
+                            </div>
+                            <h6><span class="label label-danger">File</span> Eddie uploaded new files: <small class="text-muted">2 hours ago</small></h6>
+                            <p class="m-b-15 m-t-15">hii <b></b> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="row">
+                                <div class="col-auto text-center">
+                                    <img src="assets/images/blog/blog-r-1.jpg" alt="img" class="img-fluid img-100">
+                                    <h6 class="m-t-15 m-b-0">Old Scooter</h6>
+                                    <p class="text-muted m-b-0"><small>PNG-100KB</small></p>
+                                </div>
+                                <div class="col-auto text-center">
+                                    <img src="assets/images/blog/blog-r-2.jpg" alt="img" class="img-fluid img-100">
+                                    <h6 class="m-t-15 m-b-0">Wall Art</h6>
+                                    <p class="text-muted m-b-0"><small>PNG-150KB</small></p>
+                                </div>
+                                <div class="col-auto text-center">
+                                    <img src="assets/images/blog/blog-r-3.jpg" alt="img" class="img-fluid img-100">
+                                    <h6 class="m-t-15 m-b-0">Microphone</h6>
+                                    <p class="text-muted m-b-0"><small>PNG-150KB</small></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="diactive-feed">
+                            <div class="feed-user-img">
+                                <img src="assets/images/avatar-4.jpg" class="img-radius " alt="User-Profile-Image">
+                            </div>
+                            <h6><span class="label label-success">Task</span>Sarah marked the Pending Review: <span class="text-c-green"> Trash Can Icon Design</span><small class="text-muted">2 hours ago</small></h6>
+                        </li>
+                        <li class="diactive-feed">
+                            <div class="feed-user-img">
+                                <img src="assets/images/avatar-2.jpg" class="img-radius " alt="User-Profile-Image">
+                            </div>
+                            <h6><span class="label label-primary">comment</span> abc posted a task:  <span class="text-c-green">Design a new Homepage</span>  <small class="text-muted">6 hours ago</small></h6>
+                            <p class="m-b-15 m-t-15" hii ><b></b> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </li>
+                        <li class="active-feed">
+                            <div class="feed-user-img">
+                                <img src="assets/images/avatar-3.jpg" class="img-radius " alt="User-Profile-Image">
+                            </div>
+                            <h6><span class="label label-warning">Task</span>Sarah marked : <span class="text-c-green"> do Icon Design</span><small class="text-muted">10 hours ago</small></h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- users visite and profile end -->
+        <!-- tabs card start -->
+        <div class="col-sm-12">
+            <div class="card tabs-card">
+                <div class="card-block p-0">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs md-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home3" role="tab"><i class="fa fa-home"></i>Home</a>
+                            <div class="slide"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profile3" role="tab"><i class="fa fa-key"></i>Security</a>
+                            <div class="slide"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#messages3" role="tab"><i class="fa fa-play-circle"></i>Entertainment</a>
+                            <div class="slide"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#settings3" role="tab"><i class="fa fa-database"></i>Big Data</a>
+                            <div class="slide"></div>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <form method="get" asp-action="index">
+                        <p>
+                            Staff Email: @Html.TextBox("StSearch")
+                            <input type="submit" value="Search" />
+                        </p>
+                    </form>
+                    <div class="tab-content card-block">
+                        <div class="tab-pane active" id="home3" role="tabpanel">
+
+                            <div class="table-responsive">
+                                <table class="table">
+                                    @*@using (Html.BeginForm())
+                                    {
+                                        <p>
+                                            Staff Email: @Html.TextBox("SearchString")
+                                            <input type="submit" value="Search" />
+                                        </p>
+
+                                    }*@
+                                    <tr>
+                                        <th>Staff Email</th>
+                                        <th>Task Assign</th>
+                                        <th>Status</th>
+                                    </tr>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    <a asp-controller="home" asp-action="users" asp-route-id="@item.Id"> @Html.DisplayFor(modelItem => item.StaffEmail)</a>
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.RecomTask)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Status)
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+
+
+                                </table>
+                            </div>
+                          
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tabs card end -->
+
+    </div>
+</div>

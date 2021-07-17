@@ -1,0 +1,32 @@
+﻿@model IEnumerable<AdminModel>
+
+@{
+
+    ViewBag.Title = "Admin Details";
+}
+
+
+<div class="card-deck">
+    @if (Model.Any())
+    
+        foreach (var adminModel  in Model)
+        {
+            var photoPath = "~/assets/images/" + adminModel.Picture ?? "adminuser.png";
+
+            <div class="card m-3" style="min-width:18rem; max-width:30.5%;">
+                <div class="card-header">
+                    <h2>@adminModel.FullName</h2>
+                </div>
+                <img class="card-img-top" src="@photoPath" asp-append-version="true" width="10" />
+                <div class="text-center">
+                    <a asp-controller="admin" asp-action="adminDetails" asp-route-id="@adminModel.Id" class="btn btn-primary m-1">View</a>
+                    <a asp-action="edit" asp-controller="admin" asp-route-id="@adminModel.Id" class="btn btn-primary m-1 ">Edit</a>
+                    <a href="#" class="btn btn-danger m-1">Delete</a>
+                </div>
+            </div>
+        }
+    else
+    {
+        <div>no records</div>
+    }
+</div>

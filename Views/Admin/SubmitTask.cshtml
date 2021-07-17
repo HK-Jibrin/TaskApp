@@ -1,0 +1,40 @@
+﻿@model UserViewModel
+       @{
+        ViewBag.Title = "Update Task";
+    }
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post">
+                <div asp-validation-summary="All" class="text-danger"> </div>
+                <div class="form-group row">
+                    <label asp-for="StaffEmail" class="col-sm-2 col-form-label"></label>
+                    <select asp-items="@Model.StaffEmailList" asp-for="StaffEmail" class="form-control">
+                        <option value="0">Select Email</option>
+                        @*<option value="Male">Male</option>
+                <option value="Female">Female</option>*@
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="RecomTask">Task</label>
+                    <input asp-for="RecomTask" class="form-control" />
+                    <span asp-validation-for="RecomTask" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group row">
+            <label asp-for="Submision" class="col-sm-2 col-form-label">Task Upload </label>
+            <div class="col-sm-10">
+                <div class="custom-file">
+                    <input asp-for="Submision" type="file" class="form-control">
+                    <span asp-validation-for="Submision"></span>
+                </div>
+            </div>
+        </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a asp-controller="admin" asp-action="details" class="btn btn-primary">Cancel</a>
+                    </div>
+                </div>
+            </form>
+    </div>
+</div>

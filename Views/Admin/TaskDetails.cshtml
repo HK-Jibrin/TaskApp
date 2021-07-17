@@ -1,0 +1,28 @@
+﻿@model TaskDetailsViewModel
+
+@{
+    ViewBag.Title = "Task Assigned";
+}
+<h1>Assign Task</h1>
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.StaffEmail</h1>
+                <div class="card-body text-center">
+                    <h3>Email: @Model.StaffEmail</h3>
+                    <h3>Task:@Model.RecomTask</h3>
+                    <h3>Status: @Model.Status</h3>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-controller="home" asp-action="index" class="btn btn-primary">Back</a>
+                    <a asp-action="taskEdit" asp-controller="admin" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

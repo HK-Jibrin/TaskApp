@@ -1,0 +1,26 @@
+﻿@model AdminViewModel
+@{
+    ViewBag.Title = "Admin Details";
+    var photoPath = "~/assets/images/" + Model.Picture ?? "adminuser.png";
+}
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Email</h1>
+                <div class="card-body text-center">
+                    <img class="card-img-top" src="@photoPath" asp-append-version="true" width="5" />
+                    <h3>Specialty: @Model.Speciality</h3>
+                    <h3>Address: @Model.Address</h3>
+                    <h3>Department:@Model.Department</h3>
+                    <h3>Date: @Model.Date.Date</h3>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-controller="admin" asp-action="Details" class="btn btn-primary">Back</a>
+                    <a asp-action="edit" asp-controller="admin" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
